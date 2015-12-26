@@ -376,3 +376,162 @@ Stack Trace:
 #2 {main}
 
 
+2015-12-26 15:23:19 Error: [Cake\View\Exception\MissingTemplateException] Template file "Articles/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Articles/index.ctp',
+)
+Request URL: /Articles
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/View/View.php(576): Cake\View\View->_getViewFileName(NULL)
+#1 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#4 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-12-26 15:26:22 Error: [Cake\View\Exception\MissingTemplateException] Template file "Articles/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Articles/index.ctp',
+)
+Request URL: /articles/index
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/View/View.php(576): Cake\View\View->_getViewFileName(NULL)
+#1 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#4 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-12-26 15:27:48 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Tabela 'fabioalvaro13.nada' não existe
+Request URL: /nada
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'nada', Array, Object(Cake\Database\Schema\Table))
+#1 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('nada', Array)
+#2 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\CachedCollection->describe('nada')
+#3 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#4 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#7 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#8 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(Cake\ORM\Table), Array)
+#9 /srv/www/htdocs/cakexuxu/src/Controller/NadaController.php(21): Cake\Controller\Controller->paginate(Object(Cake\ORM\Table))
+#10 [internal function]: App\Controller\NadaController->index()
+#11 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#12 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\NadaController))
+#14 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-12-26 15:27:55 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Tabela 'fabioalvaro13.nada' não existe
+Request URL: /nada/index
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'nada', Array, Object(Cake\Database\Schema\Table))
+#1 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('nada', Array)
+#2 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/ORM/Table.php(423): Cake\Database\Schema\CachedCollection->describe('nada')
+#3 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/ORM/Query.php(173): Cake\ORM\Table->schema()
+#4 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/ORM/Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/ORM/Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/ORM/Table.php(931): Cake\ORM\Table->query()
+#7 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#8 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(Cake\ORM\Table), Array)
+#9 /srv/www/htdocs/cakexuxu/src/Controller/NadaController.php(21): Cake\Controller\Controller->paginate(Object(Cake\ORM\Table))
+#10 [internal function]: App\Controller\NadaController->index()
+#11 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#12 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\NadaController))
+#14 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-12-26 15:33:03 Error: [Cake\Controller\Exception\MissingActionException] Action ArticlesController::view() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'view',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /articles/view/1
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#2 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-12-26 15:33:07 Error: [Cake\Controller\Exception\MissingActionException] Action ArticlesController::view() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'view',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /articles/view/2
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#2 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-12-26 15:33:15 Error: [Cake\Controller\Exception\MissingActionException] Action ArticlesController::view() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'view',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /articles/view/3
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#2 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-12-26 15:34:13 Error: [Cake\View\Exception\MissingTemplateException] Template file "Articles/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Articles/view.ctp',
+)
+Request URL: /articles/view/2
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/View/View.php(576): Cake\View\View->_getViewFileName(NULL)
+#1 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#4 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-12-26 15:34:17 Error: [Cake\View\Exception\MissingTemplateException] Template file "Articles/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Articles/view.ctp',
+)
+Request URL: /articles/view/1
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/View/View.php(576): Cake\View\View->_getViewFileName(NULL)
+#1 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#4 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-12-26 16:47:16 Error: Fatal Error (4): syntax error, unexpected 'ALvaro' (T_STRING), expecting ',' or ';' in [/srv/www/htdocs/cakexuxu/src/Template/Articles/index.ctp, line 35]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2015-12-26 16:47:17 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'ALvaro' (T_STRING), expecting ',' or ';'
+Request URL: /articles
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/srv/www/htdocs...', 35)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
