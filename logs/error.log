@@ -1,0 +1,378 @@
+2015-12-26 14:57:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/base.css?p=css%2Fbase.css
+Stack Trace:
+#0 /srv/www/htdocs/batata/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/batata/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 14:57:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/cake.css?p=css%2Fcake.css
+Stack Trace:
+#0 /srv/www/htdocs/batata/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/batata/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 14:57:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/base.css?p=css%2Fbase.css
+Stack Trace:
+#0 /srv/www/htdocs/batata/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/batata/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 14:57:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/cake.css?p=css%2Fcake.css
+Stack Trace:
+#0 /srv/www/htdocs/batata/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/batata/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 14:59:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/base.css?p=css%2Fbase.css
+Stack Trace:
+#0 /srv/www/htdocs/batata/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/batata/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 14:59:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/cake.css?p=css%2Fcake.css
+Stack Trace:
+#0 /srv/www/htdocs/batata/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/batata/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 14:59:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Favicon.ico could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.ico',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /favicon.ico?p=favicon.ico
+Stack Trace:
+#0 /srv/www/htdocs/batata/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/batata/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 14:59:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/base.css?p=css%2Fbase.css
+Stack Trace:
+#0 /srv/www/htdocs/batata/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/batata/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 14:59:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/cake.css?p=css%2Fcake.css
+Stack Trace:
+#0 /srv/www/htdocs/batata/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/batata/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:00:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/base.css?p=css%2Fbase.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:00:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Favicon.ico could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.ico',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /favicon.ico?p=favicon.ico
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:00:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/cake.css?p=css%2Fcake.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:01:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/base.css?p=css%2Fbase.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:01:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/cake.css?p=css%2Fcake.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:01:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Favicon.ico could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.ico',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /favicon.ico?p=favicon.ico
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:01:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/base.css?p=css%2Fbase.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:01:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/cake.css?p=css%2Fcake.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:01:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/base.css?p=css%2Fbase.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:01:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/cake.css?p=css%2Fcake.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:03:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/base.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:03:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/cake.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:03:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/base.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:03:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/cake.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:03:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/base.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:03:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/cake.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:03:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/cake.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
+2015-12-26 15:03:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/base.css
+Stack Trace:
+#0 /srv/www/htdocs/cakexuxu/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /srv/www/htdocs/cakexuxu/index.php(16): require('/srv/www/htdocs...')
+#2 {main}
+
+
