@@ -2,6 +2,10 @@
 
 <h1>Blog articles</h1>
 <p><?= $this->Html->link('Adicionar artigo', ['action' => 'add']) ?></p>
+
+<!-- make a link using the new helper -->
+<?= $this->Fabioalvaro->bold('texto qualquer') ?>
+
 <table>
     <tr>
         <th>Id</th>
