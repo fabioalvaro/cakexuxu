@@ -17,7 +17,7 @@ class ArticlesController extends AppController {
 
     public function view($id = null) {
         $article = $this->Articles->get($id);
-        $this->set(compact('article'));
+        $this->set(compact('article'));        
     }
 
     public function add() {
@@ -27,7 +27,7 @@ class ArticlesController extends AppController {
         if ($this->request->is('post')) {
             $article = $this->Articles->patchEntity($article, $this->request->data);
             // Added this line
-            $article->user_id = $this->Auth->user('id');
+           
             // You could also do the following
             //$newData = ['user_id' => $this->Auth->user('id')];
             //$article = $this->Articles->patchEntity($article, $newData);

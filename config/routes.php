@@ -48,7 +48,7 @@ Router::scope('/', function ($routes) {
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
     //$routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
-    $routes->connect('/', ['controller' => 'Articles', 'action' => 'index']);
+    $routes->connect('/', ['controller' => 'dashboard', 'action' => 'index']);
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
      */
@@ -56,7 +56,8 @@ Router::scope('/', function ($routes) {
     
     
     
-    
+//$routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+    $routes->connect('/nadaroute', ['controller' => 'Articles', 'action' => 'index']);    
     
     
 
