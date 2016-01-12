@@ -3,29 +3,39 @@
 <?= $this->Flash->render() ?>
 
 
+<form class="form-inline">
 
+    <div class="form-group">
+        <label class="sr-only" for="exampleInputAmount">Descricao</label>
+        <div class="input-group">      
+            <input type="text" class="form-control" id="txt_descricao" placeholder="Amount">  
 
+            
+            
+            
+        </div>
+        
 
-<div class="col-lg-12">    
-    <input type="text" class="form-control" placeholder="Digite uma descricao para pesquisar...">
-    <div><a id="click">Click aqui</a></div>
-</div>
-
-
-
-
-<div class="col-lg-12">   
+    </div>
+    <button id="btn_buscar_estoques" type="button" class="btn btn-primary">Buscar</button>
     
-    <div id="barra" class="progress hidden">
-  <div class=" progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
-    <span class="sr-only">45% Complete</span>
-  </div>
-</div>
+            <div id="barra" class="progress hidden">
+            <div class=" progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                <span class="sr-only">45% Complete</span>
+            </div>
+        </div>            
+
+    
+    
+</form>
+
+
+<div class="col-lg-12">
+
     <textarea id="msg" class="form-control" rows="3">
         <?php
         $name = $this->request->session()->read('nome');
-
-        echo $name;
+        echo "sessao " . $name;
         ?>
     </textarea>
 
@@ -36,7 +46,7 @@
 
 <div class="col-lg-6">
     <h2><?= __('Estoques') ?></h2>        
-<?= $this->Html->link(__('Novo Estoque'), ['action' => 'add'], ['class' => 'btn btn-primary']) ?>
+    <?= $this->Html->link(__('Novo Estoque'), ['action' => 'add'], ['class' => 'btn btn-primary']) ?>
     <br/><br/>
 
 
@@ -54,27 +64,27 @@
                 </tr>
 
             </thead>
-            <tbody>
-<?php foreach ($estoques as $estoque): ?>
+            <tbody id="corpo_tabela">
+                <?php foreach ($estoques as $estoque): ?>
                     <tr>
                         <td><?= $this->Number->format($estoque->id) ?></td>
                         <td><?= h($estoque->descricao) ?></td>
                         <td><?= $this->Number->format($estoque->active) ?></td>
                         <td class="actions">
-    <?= $this->Html->link(__('view'), ['action' => 'view', $estoque->id]) ?>
-    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $estoque->id]) ?>
-    <?= $this->Form->postLink(__('Excluir'), ['action' => 'delete', $estoque->id], ['confirm' => __('Are you sure you want to delete # {0}?', $estoque->id)]) ?>
+                            <?= $this->Html->link(__('view'), ['action' => 'view', $estoque->id]) ?>
+                            <?= $this->Html->link(__('Editar'), ['action' => 'edit', $estoque->id]) ?>
+                            <?= $this->Form->postLink(__('Excluir'), ['action' => 'delete', $estoque->id], ['confirm' => __('Are you sure you want to delete # {0}?', $estoque->id)]) ?>
                         </td>
                     </tr>
-                        <?php endforeach; ?>
+                <?php endforeach; ?>
 
             </tbody>
         </table>
         <div class="paginator">
             <ul class="pagination">
-<?= $this->Paginator->prev('< ' . __('previous')) ?>
-<?= $this->Paginator->numbers() ?>
-<?= $this->Paginator->next(__('next') . ' >') ?>
+                <?= $this->Paginator->prev('< ' . __('previous')) ?>
+                <?= $this->Paginator->numbers() ?>
+                <?= $this->Paginator->next(__('next') . ' >') ?>
             </ul>
             <p><?= $this->Paginator->counter() ?></p>
         </div>

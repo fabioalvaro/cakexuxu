@@ -124,11 +124,19 @@ class EstoquesController extends AppController {
      * na em ajax_msg.ctp */
 
     public function ajaxMsg() {
-        sleep(3);
-        //$this->layout = "ajax"; //aqui poderiamos ter, requisições a banco de dados 
+        //var_dump($_REQUEST);
+        
+       // echo $_REQUEST['name'];
+      //  sleep(3);
+       
+        
+//$this->layout = "ajax"; //aqui poderiamos ter, requisições a banco de dados 
         $this->viewBuilder()->layout("ajax");
+        
+        
+        
         //validações, chamada à outas DataSources etc.	
-        $this->set("mensagem","Olá Mundo! CakePHP Ajax");	
+        $this->set("mensagem",$_REQUEST['name']);	
         
     }
 }
