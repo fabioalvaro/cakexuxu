@@ -266,3 +266,7 @@
                     </div>
                 </div>
                 <!-- /.row -->
+        <!-- Morris Charts JavaScript -->        
+        <?= $this->Html->script('bootstrap/js/plugins/morris/raphael.min.js', array('inline' => false)); ?>
+        <?= $this->Html->script('bootstrap/js/plugins/morris/morris.min.js', array('inline' => false)); ?>
+        <?= $this->Html->script('bootstrap/js/plugins/morris/morris-data.js', array('inline' => false)); ?>

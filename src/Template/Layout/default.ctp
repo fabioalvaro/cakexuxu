@@ -1,5 +1,4 @@
 <?php
-
 /**
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
@@ -13,7 +12,6 @@
  * @since         0.10.0
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
 $cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
 <!DOCTYPE html>
@@ -30,16 +28,16 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <title>SB Admin - Bootstrap Admin Template</title>
 
         <!-- Bootstrap Core CSS -->   
-    <?= $this->Html->css('bootstrap/css/bootstrap.min.css') ?>
+<?= $this->Html->css('bootstrap/css/bootstrap.min.css') ?>
 
         <!-- Custom CSS -->   
-    <?= $this->Html->css('bootstrap/css/sb-admin.css') ?>
+<?= $this->Html->css('bootstrap/css/sb-admin.css') ?>
 
         <!-- Morris Charts CSS -->    
-    <?= $this->Html->css('bootstrap/css/plugins/morris.css') ?>
+<?= $this->Html->css('bootstrap/css/plugins/morris.css') ?>
 
         <!-- Custom Fonts -->    
-    <?= $this->Html->css('/bootstrap/font-awesome/css/font-awesome.min.css') ?>
+<?= $this->Html->css('/bootstrap/font-awesome/css/font-awesome.min.css') ?>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,21 +47,21 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <![endif]-->
 
 
-        <?= $this->Html->charset() ?>
+<?= $this->Html->charset() ?>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-        <?= $cakeDescription ?>:
-        <?= $this->fetch('title') ?>
+<?= $cakeDescription ?>:
+            <?= $this->fetch('title') ?>
         </title>
-    <?= $this->Html->meta('icon') ?>
+            <?= $this->Html->meta('icon') ?>
 
 
-    <?= $this->fetch('meta') ?>
-    <?= $this->fetch('css') ?>
-        
+<?= $this->fetch('meta') ?>
+        <?= $this->fetch('css') ?>
 
-    
 
+
+<?= $this->Html->script('bootstrap/js/jquery.js', array('inline' => false)); ?>      
     </head>
 
     <body>
@@ -230,9 +228,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
                 <div class="container-fluid">
 
-                    <?= $this->Flash->render() ?>                   
+<?= $this->Flash->render() ?>                   
                     <?= $this->fetch('content') ?>
-                    
+
                 </div>
                 <!-- /.container-fluid -->
 
@@ -243,17 +241,17 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <!-- /#wrapper -->
 
         <!-- jQuery -->        
-        <?= $this->Html->script('bootstrap/js/jquery.js', array('inline' => false)); ?>        
+
+<?= $this->Html->script('ajax.js', array('inline' => false)); ?>
 
         <!-- Bootstrap Core JavaScript -->        
-        <?= $this->Html->script('bootstrap/js/bootstrap.min.js', array('inline' => false)); ?>
+<?= $this->Html->script('bootstrap/js/bootstrap.min.js', array('inline' => false)); ?>
 
-        <!-- Morris Charts JavaScript -->        
-        <?= $this->Html->script('bootstrap/js/plugins/morris/raphael.min.js', array('inline' => false)); ?>
-        <?= $this->Html->script('bootstrap/js/plugins/morris/morris.min.js', array('inline' => false)); ?>
-        <?= $this->Html->script('bootstrap/js/plugins/morris/morris-data.js', array('inline' => false)); ?>
-        
-        <?= $this->fetch('script') ?>
+
+
+
+
+<?= $this->fetch('script') ?>
 
     </body>
 

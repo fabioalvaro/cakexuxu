@@ -21,6 +21,16 @@ class DashboardController extends AppController
         
         $this->set('_serialize', ['dashboard']);
         $this->set(compact('dashboard'));
+        
+        
+
+        //teste
+        
+      $this->request->session()->write('merdaaa', 'lixo lixo lixo');
+      $this->request->session()->write('nome', 'Fabio');
+      $this->request->session()->write('idade', '36');
+      $this->request->session()->write('Empresa', 'industriafox');
+        
     }
 
     /**
