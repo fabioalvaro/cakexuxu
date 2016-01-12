@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+        use Cake\ORM\TableRegistry;
 
 /**
  * Estoques Controller
@@ -24,6 +25,18 @@ class EstoquesController extends AppController {
         $this->Flash->set('Por favor funciona xuxu.', [
             'element' => 'message_bootstrap'
         ]);
+        
+        
+        
+
+
+
+
+
+
+
+
+
     }
 
     /**
@@ -130,13 +143,22 @@ class EstoquesController extends AppController {
       //  sleep(3);
        
         
-//$this->layout = "ajax"; //aqui poderiamos ter, requisições a banco de dados 
+        //$this->layout = "ajax"; //aqui poderiamos ter, requisições a banco de dados 
         $this->viewBuilder()->layout("ajax");
         
         
         
         //validações, chamada à outas DataSources etc.	
         $this->set("mensagem",$_REQUEST['name']);	
+        
+                $merda = TableRegistry::get('merda');
+
+        $query = $merda->find();
+
+        foreach ($query as $row) {
+            echo $row->descricao."<br/>";
+        }
+        die("chegou");
         
     }
 }
