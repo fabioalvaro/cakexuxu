@@ -20,6 +20,11 @@ class EstoquesController extends AppController
     {
         $this->set('estoques', $this->paginate($this->Estoques));
         $this->set('_serialize', ['estoques']);
+        
+        // In your Controller
+        $this->Flash->set('Por favor funciona xuxu.', [
+            'element' => 'message_bootstrap'
+        ]);
     }
 
     /**
