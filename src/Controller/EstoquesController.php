@@ -3,14 +3,22 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-        use Cake\ORM\TableRegistry;
+use Cake\ORM\TableRegistry;
 
 /**
  * Estoques Controller
  *
- * @property \App\Model\Table\EstoquesTable $Estoques
+ * @property \App\Model\Table\EstoquesTablex $Estoques
  */
 class EstoquesController extends AppController {
+
+    /** functiona tha feed the grid system*/
+    public function grid() {
+        
+        //Get the param and set the variable to pass througt to template
+
+        $this->set('v_busca', $this->request->query['param_descricao']);
+    }
 
     /**
      * Index method
@@ -22,21 +30,10 @@ class EstoquesController extends AppController {
         $this->set('_serialize', ['estoques']);
 
         // In your Controller
-        $this->Flash->set('Por favor funciona xuxu.', [
-            'element' => 'message_bootstrap'
-        ]);
+//        $this->Flash->set('Por favor funciona xuxu.', [
+//            'element' => 'message_bootstrap'
+//        ]);
         
-        
-        
-
-
-
-
-
-
-
-
-
     }
 
     /**
@@ -124,7 +121,7 @@ class EstoquesController extends AppController {
 
     /** action para view mensagem 
      * aqui não definiremos nenhum corpo pois 
-     * não se faz necessário */ 
+     * não se faz necessário */
     public function mensagem() {
         
     }
@@ -135,31 +132,26 @@ class EstoquesController extends AppController {
      *  variável chamada 'mensagem' 
      * que ficará disponível 
      * na em ajax_msg.ctp */
-
     public function ajaxMsg() {
         //var_dump($_REQUEST);
-        
-       // echo $_REQUEST['name'];
-      //  sleep(3);
-       
-        
+        // echo $_REQUEST['name'];
+        //  sleep(3);
         //$this->layout = "ajax"; //aqui poderiamos ter, requisições a banco de dados 
         $this->viewBuilder()->layout("ajax");
-        
-        
-        
+
+
+
         //validações, chamada à outas DataSources etc.	
-        $this->set("mensagem",$_REQUEST['name']);	
-        
-                $merda = TableRegistry::get('merda');
+        $this->set("mensagem", $_REQUEST['name']);
+
+        $merda = TableRegistry::get('merda');
 
         $query = $merda->find();
 
         foreach ($query as $row) {
-            echo $row->descricao."<br/>";
+            echo $row->descricao . "<br/>";
         }
         die("chegou");
-        
     }
+
 }
-    

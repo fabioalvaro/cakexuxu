@@ -6,43 +6,21 @@
 <form class="form-inline">
 
     <div class="form-group">
-        <label class="sr-only" for="exampleInputAmount">Descricao</label>
+        <label class="sr-only" for="txt_descricao">Descricao</label>
         <div class="input-group">      
-            <input type="text" class="form-control" id="txt_descricao" placeholder="Amount">  
-
-            
-            
-            
+            <input type="text" class="form-control" name="txt_descricao" id="txt_descricao" placeholder="Digite uma palavra"> 
         </div>
-        
-
     </div>
+
     <button id="btn_buscar_estoques" type="button" class="btn btn-primary">Buscar</button>
-    
-            <div id="barra" class="progress hidden">
-            <div class=" progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
-                <span class="sr-only">45% Complete</span>
-            </div>
-        </div>            
+    <button id="btn_limpar" type="button" class="btn btn-primary">Limpar</button>
 
-    
-    
+    <div id="barra" class="progress hidden">
+        <div class=" progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+            <span class="sr-only">45% Complete</span>
+        </div>
+    </div> 
 </form>
-
-
-<div class="col-lg-12">
-
-    <textarea id="msg" class="form-control" rows="3">
-        <?php
-        $name = $this->request->session()->read('nome');
-        echo "sessao " . $name;
-        ?>
-    </textarea>
-
-</div>
-
-
-
 
 <div class="col-lg-6">
     <h2><?= __('Estoques') ?></h2>        
@@ -80,7 +58,7 @@
 
             </tbody>
         </table>
-        <div class="paginator">
+        <div class="paginator" id="my_paginator">
             <ul class="pagination">
                 <?= $this->Paginator->prev('< ' . __('previous')) ?>
                 <?= $this->Paginator->numbers() ?>
@@ -91,8 +69,4 @@
     </div>
 </div>
 
-
-<?php
-//nadaa
-?>
-
+<script src="/js/Estoques/index.js"></script>
