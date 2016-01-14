@@ -1,39 +1,25 @@
 <?php
-
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\ORM\TableRegistry;
 
 /**
  * Estoques Controller
  *
- * @property \App\Model\Table\EstoquesTablex $Estoques
+ * @property \App\Model\Table\EstoquesTable $Estoques
  */
-class EstoquesController extends AppController {
-
-    /** functiona tha feed the grid system*/
-    public function grid() {
-        
-        //Get the param and set the variable to pass througt to template
-
-        $this->set('v_busca', $this->request->query['param_descricao']);
-    }
+class EstoquesController extends AppController
+{
 
     /**
      * Index method
      *
      * @return void
      */
-    public function index() {
+    public function index()
+    {
         $this->set('estoques', $this->paginate($this->Estoques));
         $this->set('_serialize', ['estoques']);
-
-        // In your Controller
-//        $this->Flash->set('Por favor funciona xuxu.', [
-//            'element' => 'message_bootstrap'
-//        ]);
-        
     }
 
     /**
@@ -43,8 +29,8 @@ class EstoquesController extends AppController {
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function view($id = null) {
-
+    public function view($id = null)
+    {
         $estoque = $this->Estoques->get($id, [
             'contain' => []
         ]);
@@ -57,14 +43,10 @@ class EstoquesController extends AppController {
      *
      * @return void Redirects on successful add, renders view otherwise.
      */
-    public function add() {
-
-
+    public function add()
+    {
         $estoque = $this->Estoques->newEntity();
-
-
         if ($this->request->is('post')) {
-            // die("chegou controller is post");
             $estoque = $this->Estoques->patchEntity($estoque, $this->request->data);
             if ($this->Estoques->save($estoque)) {
                 $this->Flash->success(__('The estoque has been saved.'));
@@ -84,7 +66,8 @@ class EstoquesController extends AppController {
      * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($id = null) {
+    public function edit($id = null)
+    {
         $estoque = $this->Estoques->get($id, [
             'contain' => []
         ]);
@@ -108,7 +91,8 @@ class EstoquesController extends AppController {
      * @return \Cake\Network\Response|null Redirects to index.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function delete($id = null) {
+    public function delete($id = null)
+    {
         $this->request->allowMethod(['post', 'delete']);
         $estoque = $this->Estoques->get($id);
         if ($this->Estoques->delete($estoque)) {
@@ -118,40 +102,4 @@ class EstoquesController extends AppController {
         }
         return $this->redirect(['action' => 'index']);
     }
-
-    /** action para view mensagem 
-     * aqui não definiremos nenhum corpo pois 
-     * não se faz necessário */
-    public function mensagem() {
-        
-    }
-
-    /** função para a chamada ajax
-     *  funcionamento muito simples
-     *  setamos uma string para uma
-     *  variável chamada 'mensagem' 
-     * que ficará disponível 
-     * na em ajax_msg.ctp */
-    public function ajaxMsg() {
-        //var_dump($_REQUEST);
-        // echo $_REQUEST['name'];
-        //  sleep(3);
-        //$this->layout = "ajax"; //aqui poderiamos ter, requisições a banco de dados 
-        $this->viewBuilder()->layout("ajax");
-
-
-
-        //validações, chamada à outas DataSources etc.	
-        $this->set("mensagem", $_REQUEST['name']);
-
-        $merda = TableRegistry::get('merda');
-
-        $query = $merda->find();
-
-        foreach ($query as $row) {
-            echo $row->descricao . "<br/>";
-        }
-        die("chegou");
-    }
-
 }

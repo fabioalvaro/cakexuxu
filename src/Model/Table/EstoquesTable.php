@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
 /**
  * Estoques Model
  *
+ * @property \Cake\ORM\Association\HasMany $Kardexs
  */
 class EstoquesTable extends Table
 {
@@ -24,8 +25,13 @@ class EstoquesTable extends Table
     {
         parent::initialize($config);
 
-        
+        $this->table('estoques');
+        $this->displayField('id');
+        $this->primaryKey('id');
 
+        $this->hasMany('Kardexs', [
+            'foreignKey' => 'estoque_id'
+        ]);
     }
 
     /**
@@ -36,11 +42,17 @@ class EstoquesTable extends Table
      */
     public function validationDefault(Validator $validator)
     {
+        $validator
+            ->add('id', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('id', 'create');
 
         $validator
             ->requirePresence('descricao', 'create')
             ->notEmpty('descricao');
 
+        $validator
+            ->add('active', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('active');
 
         return $validator;
     }
