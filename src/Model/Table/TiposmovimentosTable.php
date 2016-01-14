@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
 /**
  * Tiposmovimentos Model
  *
+ * @property \Cake\ORM\Association\HasMany $Kardex
  */
 class TiposmovimentosTable extends Table
 {
@@ -28,6 +29,9 @@ class TiposmovimentosTable extends Table
         $this->displayField('name');
         $this->primaryKey('id');
 
+        $this->hasMany('Kardex', [
+            'foreignKey' => 'tiposmovimento_id'
+        ]);
     }
 
     /**
@@ -43,7 +47,8 @@ class TiposmovimentosTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->allowEmpty('name');
+            ->requirePresence('name', 'create')
+            ->notEmpty('name');
 
         $validator
             ->add('active', 'valid', ['rule' => 'numeric'])

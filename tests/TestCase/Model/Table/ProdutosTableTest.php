@@ -17,7 +17,8 @@ class ProdutosTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.produtos'
+        'app.produtos',
+        'app.departamentos'
     ];
 
     /**
@@ -60,6 +61,16 @@ class ProdutosTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test buildRules method
+     *
+     * @return void
+     */
+    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

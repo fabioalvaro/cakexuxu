@@ -10,6 +10,8 @@ use Cake\ORM\Entity;
  * @property string $descricao
  * @property float $custo
  * @property \Cake\I18n\Time $ativo
+ * @property int $departamento_id
+ * @property \App\Model\Entity\Departamento $departamento
  */
 class Produto extends Entity
 {

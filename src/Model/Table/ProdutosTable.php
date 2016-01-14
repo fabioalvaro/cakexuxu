@@ -10,6 +10,8 @@ use Cake\Validation\Validator;
 /**
  * Produtos Model
  *
+ * @property \Cake\ORM\Association\BelongsTo $Departamentos
+ * @property \Cake\ORM\Association\HasMany $Kardexs
  */
 class ProdutosTable extends Table
 {
@@ -28,6 +30,13 @@ class ProdutosTable extends Table
         $this->displayField('id');
         $this->primaryKey('id');
 
+        $this->belongsTo('Departamentos', [
+            'foreignKey' => 'departamento_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->hasMany('Kardexs', [
+            'foreignKey' => 'produto_id'
+        ]);
     }
 
     /**
@@ -54,5 +63,18 @@ class ProdutosTable extends Table
             ->allowEmpty('ativo');
 
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['departamento_id'], 'Departamentos'));
+        return $rules;
     }
 }

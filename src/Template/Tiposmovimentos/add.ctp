@@ -1,4 +1,6 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
+<?= $this->Html->link(__('Voltar'), ['action' => 'index'],['class' => 'btn btn-primary']) ?>
+<div class="form-group">
+    <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('List Tiposmovimentos'), ['action' => 'index']) ?></li>
@@ -15,4 +17,5 @@
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>
+</div>
 </div>

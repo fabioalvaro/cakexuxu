@@ -8,6 +8,8 @@
             )
         ?></li>
         <li><?= $this->Html->link(__('List Produtos'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Departamentos'), ['controller' => 'Departamentos', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Departamento'), ['controller' => 'Departamentos', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="produtos form large-9 medium-8 columns content">
@@ -18,6 +20,7 @@
             echo $this->Form->input('descricao');
             echo $this->Form->input('custo');
             echo $this->Form->input('ativo');
+            echo $this->Form->input('departamento_id', ['options' => $departamentos]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

@@ -1,4 +1,4 @@
-
+ 
 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
@@ -114,6 +114,12 @@
                         </div>
                     </div>
                 </div>
+<div class="row center-block">
+    <div class="col-lg-12 col-md-offset-5">
+        <?=  $this->Html->image('monkey_logo.png', array('alt' => 'CakePHP','class'=>'img-responsive')); ?>
+    </div>
+</div>
+
                 <!-- /.row -->
 
                 <div class="row">
@@ -129,6 +135,9 @@
                     </div>
                 </div>
                 <!-- /.row -->
+
+                
+               
 
                 <div class="row">
                     <div class="col-lg-4">
@@ -266,6 +275,8 @@
                     </div>
                 </div>
                 <!-- /.row -->
+
+
         <!-- Morris Charts JavaScript -->        
         <?= $this->Html->script('bootstrap/js/plugins/morris/raphael.min.js', array('inline' => false)); ?>
         <?= $this->Html->script('bootstrap/js/plugins/morris/morris.min.js', array('inline' => false)); ?>

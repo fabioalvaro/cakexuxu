@@ -1,18 +1,53 @@
+
+<!--Inicio do Form Fabio-->
+<?= $this->Flash->render() ?>
+
+
+<form class="form-inline">
+
+    <div class="form-group">
+        <label class="sr-only" for="txt_descricao">Descricao</label>
+        <div class="input-group">      
+            <input type="text" class="form-control" name="txt_descricao" id="txt_descricao" placeholder="Digite uma palavra"> 
+        </div>
+    </div>
+
+    <button id="btn_buscar_Produto" type="button" class="btn btn-primary">Buscar</button>
+    <button id="btn_limpar" type="button" class="btn btn-primary">Limpar</button>
+
+    <div id="barra" class="progress hidden">
+        <div class=" progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+            <span class="sr-only">45% Complete</span>
+        </div>
+    </div> 
+</form>
+
+
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Produto'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Departamentos'), ['controller' => 'Departamentos', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Departamento'), ['controller' => 'Departamentos', 'action' => 'add']) ?></li>
     </ul>
 </nav>
-<div class="produtos index large-9 medium-8 columns content">
-    <h3><?= __('Produtos') ?></h3>
-    <table cellpadding="0" cellspacing="0">
+<div class="col-lg-6">
+    
+
+
+    <h2><?= __('Produtos') ?></h2>        
+    <?= $this->Html->link(__('Novo Produtos'), ['action' => 'add'], ['class' => 'btn btn-primary']) ?>
+    <br/><br/>
+
+
+    <table class="table table-bordered table-hover table-striped">
         <thead>
             <tr>
                 <th><?= $this->Paginator->sort('id') ?></th>
                 <th><?= $this->Paginator->sort('descricao') ?></th>
                 <th><?= $this->Paginator->sort('custo') ?></th>
                 <th><?= $this->Paginator->sort('ativo') ?></th>
+                <th><?= $this->Paginator->sort('departamento_id') ?></th>
                 <th class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -23,10 +58,11 @@
                 <td><?= h($produto->descricao) ?></td>
                 <td><?= $this->Number->format($produto->custo) ?></td>
                 <td><?= h($produto->ativo) ?></td>
+                <td><?= $produto->has('departamento') ? $this->Html->link($produto->departamento->id, ['controller' => 'Departamentos', 'action' => 'view', $produto->departamento->id]) : '' ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $produto->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $produto->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $produto->id], ['confirm' => __('Are you sure you want to delete # {0}?', $produto->id)]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['action' => 'view', $produto->id]) ?>
+                    <?= $this->Html->link(__('Alterar'), ['action' => 'edit', $produto->id]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['action' => 'delete', $produto->id], ['confirm' => __('Você tem certeza que quer apagar # {0}?', $produto->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
@@ -40,4 +76,8 @@
         </ul>
         <p><?= $this->Paginator->counter() ?></p>
     </div>
+
 </div>
+
+<!--Coloque Aqui seu js caso precise...-->
+<!-- <script src="/js/Produtos/index.js"></script> -->

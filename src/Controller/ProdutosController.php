@@ -18,6 +18,9 @@ class ProdutosController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Departamentos']
+        ];
         $this->set('produtos', $this->paginate($this->Produtos));
         $this->set('_serialize', ['produtos']);
     }
@@ -32,7 +35,7 @@ class ProdutosController extends AppController
     public function view($id = null)
     {
         $produto = $this->Produtos->get($id, [
-            'contain' => []
+            'contain' => ['Departamentos']
         ]);
         $this->set('produto', $produto);
         $this->set('_serialize', ['produto']);
@@ -55,7 +58,8 @@ class ProdutosController extends AppController
                 $this->Flash->error(__('The produto could not be saved. Please, try again.'));
             }
         }
-        $this->set(compact('produto'));
+        $departamentos = $this->Produtos->Departamentos->find('list', ['limit' => 200]);
+        $this->set(compact('produto', 'departamentos'));
         $this->set('_serialize', ['produto']);
     }
 
@@ -80,7 +84,8 @@ class ProdutosController extends AppController
                 $this->Flash->error(__('The produto could not be saved. Please, try again.'));
             }
         }
-        $this->set(compact('produto'));
+        $departamentos = $this->Produtos->Departamentos->find('list', ['limit' => 200]);
+        $this->set(compact('produto', 'departamentos'));
         $this->set('_serialize', ['produto']);
     }
 

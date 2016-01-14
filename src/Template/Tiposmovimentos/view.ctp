@@ -1,10 +1,10 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Tiposmovimento'), ['action' => 'edit', $tiposmovimento->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Tiposmovimento'), ['action' => 'delete', $tiposmovimento->id], ['confirm' => __('Are you sure you want to delete # {0}?', $tiposmovimento->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Tiposmovimentos'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Tiposmovimento'), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Alterar Tiposmovimento'), ['action' => 'edit', $tiposmovimento->id]) ?> </li>
+        <li><?= $this->Form->postLink(__('Excluir Tiposmovimento'), ['action' => 'delete', $tiposmovimento->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $tiposmovimento->id)]) ?> </li>
+        <li><?= $this->Html->link(__('Listar Tiposmovimentos'), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo Tiposmovimento'), ['action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="tiposmovimentos view large-9 medium-8 columns content">

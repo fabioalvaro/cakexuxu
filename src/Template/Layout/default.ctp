@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
@@ -25,7 +26,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>SB Admin - Bootstrap Admin Template</title>
+        <title>Controle de Estoque Monkey</title>
 
         <!-- Bootstrap Core CSS -->   
 <?= $this->Html->css('bootstrap/css/bootstrap.min.css') ?>
@@ -78,7 +79,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/dashboard">SB Admin</a>
+                    <a class="navbar-brand" href="/dashboard">Controle de Estoque Monkey</a>
                 </div>
                 <!-- Top Menu Items -->
                 <ul class="nav navbar-right top-nav">
@@ -163,7 +164,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Administrador <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -188,37 +189,23 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                             <a href="/dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="/estoques"><i class="fa fa-fw fa-bar-chart-o"></i> Estoques</a>
+                            <a href="/estoques"><i class="fa fa-fw fa-table"></i> Estoques</a>
                         </li>
                         <li>
-                            <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                            <a href="/tiposmovimentos"><i class="fa fa-fw fa-table"></i> Tipos Movimentos</a>
+                        </li>                                                   
+                        <li>
+                            <a href="/departamentos"><i class="fa fa-fw fa-table"></i> Departamentos</a>
                         </li>
                         <li>
-                            <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
-                        </li>
+                            <a href="/produtos"><i class="fa fa-fw fa-table"></i> Produtos</a>
+                        </li> 
                         <li>
-                            <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-                        </li>
+                            <a href="/clifors"><i class="fa fa-fw fa-table"></i> Clientes/Fornecedores</a>
+                        </li> 
                         <li>
-                            <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                            <ul id="demo" class="collapse">
-                                <li>
-                                    <a href="#">Dropdown Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Dropdown Item</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-                        </li>
-                        <li>
-                            <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-                        </li>
+                            <a href="/kardexs"><i class="fa fa-fw fa-table"></i> Kardex</a>
+                        </li>                          
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
