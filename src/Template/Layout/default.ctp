@@ -79,7 +79,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/dashboard">Controle de Estoque Monkey</a>
+                    
+                    <a class="navbar-brand" href="/dashboard">Controle de Estoque Monkey </a>
+                    <?=  $this->Html->image('monkey_logo.png', array('alt' => 'CakePHP','width'=>'45px','class'=>'img-responsive')); ?>
+                    
                 </div>
                 <!-- Top Menu Items -->
                 <ul class="nav navbar-right top-nav">
